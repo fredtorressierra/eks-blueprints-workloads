@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: skiapp
-        image: rancher/nginx # sharepointoscar/skiapp:v2
+        image: nginx # sharepointoscar/skiapp:v2
         ports:
         - containerPort: 8082
         resources:
