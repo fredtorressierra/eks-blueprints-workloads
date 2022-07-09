@@ -17,7 +17,7 @@ spec:
       - name: skiapp
         image: yeasy/simple-web #sharepointoscar/skiapp:v2
         ports:
-        - containerPort: 8081
+        - containerPort: 8082
         resources:
           requests:
             memory: "64Mi"
