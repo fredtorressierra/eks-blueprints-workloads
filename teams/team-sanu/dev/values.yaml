@@ -478,6 +478,24 @@ plugins: []
   # - digrich-bubblechart-panel
   # - grafana-clock-panel
 
+datasources:
+  datasources.yaml:
+    apiVersion: 1
+    datasources:
+    - name: Prometheus
+      type: prometheus
+      url: http://prometheus-server.prometheus.svc.cluster.local
+      access: proxy
+      isDefault: true
+    - name: CloudWatch
+      type: cloudwatch
+      access: proxy
+      uid: cloudwatch
+      editable: false
+      jsonData:
+        authType: default
+        defaultRegion: us-east-1
+
 ## Configure grafana datasources
 ## ref: http://docs.grafana.org/administration/provisioning/#datasources
 ##
