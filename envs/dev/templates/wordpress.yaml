@@ -8,7 +8,7 @@ metadata:
 spec:
   project: default
   destination:
-    namespace: wordpress
+    namespace: argocd
     server: {{ .Values.spec.destination.server }}
   source:
     repoURL: {{ .Values.spec.source.repoURL }}
