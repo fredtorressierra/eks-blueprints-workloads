@@ -4,3 +4,4 @@ spec:
   source:
     repoURL: https://github.com/fredtorressierra/eks-blueprints-workloads
     targetRevision: main
+    path: opatest
