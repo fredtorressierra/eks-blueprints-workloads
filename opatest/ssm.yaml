@@ -4,7 +4,7 @@ metadata:
   name: foo4
 spec:
   forProvider:
-    region: us-east-1
+    locationConstraint: us-east-1
     type: String
     valueSecretRef:
       key: example-key2
