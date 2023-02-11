@@ -1,12 +1,12 @@
 apiVersion: templates.gatekeeper.sh/v1beta1
 kind: ConstraintTemplate
 metadata:
-  name: denyall
+  name: denyallxp
 spec:
   crd:
     spec:
       names:
-        kind: DenyAll
+        kind: DenyAllXp
   targets:
   - target: admission.k8s.gatekeeper.sh
     rego: |
