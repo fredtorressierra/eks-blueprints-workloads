@@ -1,0 +1,9 @@
+apiVersion: ec2.aws.upbound.io/v1beta1
+kind: VPC
+metadata:
+  name: test
+spec:
+  forProvider:
+    cidrBlock: 10.255.255.0/28
+    region: us-east-1
+
