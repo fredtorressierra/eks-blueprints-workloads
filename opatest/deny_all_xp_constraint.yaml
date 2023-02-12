@@ -1,0 +1,11 @@
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: DenyAllXp
+metadata:
+  name: denyallxp
+spec:
+  match:
+    kinds:
+    - apiGroups: ["ec2.aws.crossplane.io","ec2.aws.crossplane.io","s3.aws.crossplane.io","ssm.aws.upbound.io","ec2.aws.upbound.io","s3.aws.upbound.io"]
+      kinds: ["VPC","Bucket","Parameter"]
+  parameters: {}
+  enforcementAction: deny
